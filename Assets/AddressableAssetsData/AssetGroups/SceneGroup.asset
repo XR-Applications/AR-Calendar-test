@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: SceneGroup
+  m_EditorClassIdentifier: 
+  m_GroupName: SceneGroup
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 9bab788883525ee48bc01c84c9a5fe0b
+  m_SerializeEntries:
+  - m_GUID: 40126c2cc69228b4eb3933bc3f63761c
+    m_Address: Assets/_Aura/Scenes/CapsuleScene.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - capsule
+  - m_GUID: 3f24603115e95be4cbf2728abc7411bf
+    m_Address: Assets/_Aura/Scenes/CubeScene.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - cube
+  - m_GUID: 5bee7b768c4d02c41a521d9cf4bb904d
+    m_Address: Assets/_Aura/Scenes/CylinderScene.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - cylinder
+  - m_GUID: f3bc406fd4b20c54887ed26c069653e7
+    m_Address: Assets/_Aura/Scenes/SphereScene.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sphere
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: d47bed1ce6407164bb95f1525af21821, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 06c37b21a0a4ede4dba3be6e930d7541, type: 2}
+    - {fileID: 11400000, guid: 662146b8d1e700f4b8f3ea1d2b63b922, type: 2}
