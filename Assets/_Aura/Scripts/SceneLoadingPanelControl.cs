@@ -9,7 +9,23 @@ using UnityEngine.ResourceManagement.ResourceProviders;
 public class SceneLoadingPanelControl : MonoBehaviour
 {
     float progress = 0f;
-   public void loadSCeneByLabel(string labelOfScene)
+
+    private void Awake()
+    {
+        Addressables.InitializeAsync();
+        Addressables.CheckForCatalogUpdates(true).Completed += CatalogUpdates_Completed;
+    }
+
+    private void CatalogUpdates_Completed(AsyncOperationHandle<List<string>> obj)
+    {
+        if(obj.Status == AsyncOperationStatus.Succeeded)
+        {
+            var updateString = obj.Result[0];
+            UtilityPanelControl.Instance.PrintInfo(updateString);
+        }
+    }
+
+    public void loadSCeneByLabel(string labelOfScene)
     {
          Addressables.LoadSceneAsync(labelOfScene, LoadSceneMode.Single).Completed += SceneLoadingPanelControl_Completed;
          progress += Addressables.LoadSceneAsync(labelOfScene, LoadSceneMode.Single).PercentComplete;
